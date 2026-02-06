@@ -11,7 +11,7 @@ import com.example.assignation.DTO.ReservationDTO;
 @Service
 public class ReservationService {
     private final RestTemplate restTemplate = new RestTemplate();
-    private final String apiUrl = "/API/reservations";
+    private final String apiUrl = "http://localhost:8080/API/reservations";
 
     public List<ReservationDTO> getReservations() {
         ReservationDTO[] resArray = restTemplate.getForObject(apiUrl + "/list", ReservationDTO[].class);
