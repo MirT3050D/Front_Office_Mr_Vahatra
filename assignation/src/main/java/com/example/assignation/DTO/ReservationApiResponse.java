@@ -2,7 +2,7 @@ package com.example.assignation.DTO;
 
 import java.util.List;
 
-public class ApiResponse {
+public class ReservationApiResponse {
     private int code;
     private List<ReservationDTO> data;
     private String status;
